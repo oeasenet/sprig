@@ -1,9 +1,9 @@
 # Sprig: Template functions for Go templates
 
-[![GoDoc](https://img.shields.io/static/v1?label=godoc&message=reference&color=blue)](https://pkg.go.dev/github.com/Masterminds/sprig/v3)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Masterminds/sprig)](https://goreportcard.com/report/github.com/Masterminds/sprig)
+[![GoDoc](https://img.shields.io/static/v1?label=godoc&message=reference&color=blue)](https://pkg.go.dev/github.com/oeasenet/sprig)
+[![Go Report Card](https://goreportcard.com/badge/github.com/oeasenet/sprig)](https://goreportcard.com/report/github.com/oeasenet/sprig)
 [![Stability: Sustained](https://masterminds.github.io/stability/sustained.svg)](https://masterminds.github.io/stability/sustained.html)
-[![](https://github.com/Masterminds/sprig/workflows/Tests/badge.svg)](https://github.com/Masterminds/sprig/actions)
+[![](https://github.com/oeasenet/sprig/workflows/Tests/badge.svg)](https://github.com/oeasenet/sprig/actions)
 
 The Go language comes with a [built-in template
 language](http://golang.org/pkg/text/template/), but not
@@ -16,7 +16,7 @@ JavaScript libraries, such as [underscore.js](http://underscorejs.org/).
 
 ## IMPORTANT NOTES
 
-Sprig leverages [mergo](https://github.com/imdario/mergo) to handle merges. In
+Sprig leverages [mergo](https://dario.cat/mergo) to handle merges. In
 its v0.3.9 release, there was a behavior change that impacts merging template
 functions in sprig. It is currently recommended to use v0.3.10 or later of that package.
 Using v0.3.9 will cause sprig tests to fail.
@@ -30,7 +30,7 @@ There are two active major versions of the `sprig` package.
   some functions is the reason for the new major version.
 * v2 is the previous stable release series. It has been more than three years since
   the initial release of v2. You can read the documentation and see the code
-  on the [release-2](https://github.com/Masterminds/sprig/tree/release-2) branch.
+  on the [release-2](https://github.com/oeasenet/sprig/tree/release-2) branch.
   Bug fixes to this major version will continue for some time.
 
 ## Usage
@@ -39,7 +39,7 @@ There are two active major versions of the `sprig` package.
 detailed instructions and code snippets for the >100 template functions available.
 
 **Go developers**: If you'd like to include Sprig as a library in your program,
-our API documentation is available [at GoDoc.org](http://godoc.org/github.com/Masterminds/sprig).
+our API documentation is available [at GoDoc.org](http://godoc.org/github.com/oeasenet/sprig).
 
 For standard usage, read on.
 
@@ -50,7 +50,7 @@ To load the Sprig `FuncMap`:
 ```go
 
 import (
-  "github.com/Masterminds/sprig/v3"
+  "github.com/oeasenet/sprig"
   "html/template"
 )
 
